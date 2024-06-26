@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#42A7F0"/>
+            <stroke
+                android:width="2dp"
+            android:color="@color/black"/>
+            <size android:width="25dp" android:height="25dp"/>  <!-- Set size to match ImageButton dimensions -->
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/tick"
+        android:top="2dp"
+    android:bottom="2dp"
+    android:left="2dp"
+    android:right="2dp"/>
+</layer-list>

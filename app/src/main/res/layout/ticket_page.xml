@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ticket_card_background"
+    android:padding="12dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/ticket_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        style="@style/PlayTitle"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Romeo and Juliet"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ticket_image"
+        android:layout_width="139dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="6dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_ticket_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ticket_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18/4/24"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ticket_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21:00 pm"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:id="@+id/textAuditorium"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auditorium:"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ticket_auditorium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:id="@+id/textSeat"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seat:"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ticket_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A0"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:id="@+id/textLoc"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ticket_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Megaro Mousikis"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:id="@+id/textType"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ticket Type:"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ticket_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Discount"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ticket_name"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Stathakis"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/ticket_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20$"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp">
+
+        <ImageView
+            android:id="@+id/ticket_qr"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_qr_code"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bin_icon"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/bin_icon"
+            android:layout_width="52dp"
+            android:layout_height="38dp"
+            android:clickable="true"
+            android:contentDescription="Delete"
+            android:focusable="true"
+            android:src="@drawable/ic_bin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/ticket_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="78459039-0"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/ticket_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note\nYou must arrive at the theater 30 minutes before the play starts"
+        android:textSize="16sp"
+        android:gravity="center"
+        style="@style/PlayTitle"
+        android:padding="6dp"
+        android:textColor="@android:color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/ciel"
+        android:text="Select"
+        android:visibility="gone"/>
+</LinearLayout>

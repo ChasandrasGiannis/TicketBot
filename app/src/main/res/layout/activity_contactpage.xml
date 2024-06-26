@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contactpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ScreenBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+
+    <TextView
+        android:id="@+id/titleContact"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        style="@style/Title"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="10dp"
+        android:text="Contact Us!"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/leftContactArrow"
+        android:layout_width="75dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:background="@null"
+        android:contentDescription="Left Arrow leads to previous page"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/titleContact"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <TextView
+        android:id="@+id/textContact"
+        android:layout_width="298dp"
+        android:layout_height="632dp"
+        style="@style/TransparentRectangle"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="You can contact us in one of the following ways :"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleContact"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/textEmail1"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        style="@style/ContactRectangle"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="5dp"
+        android:text="Email \nticketapprentice@gmail.com"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textContact"
+        app:layout_constraintEnd_toEndOf="@+id/textContact"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/textContact"
+        app:layout_constraintTop_toTopOf="@+id/textContact"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/textPhone1"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        style="@style/ContactRectangle"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="5dp"
+        android:text="Phone Number\n+30 211 7700 000"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textContact"
+        app:layout_constraintEnd_toEndOf="@+id/textContact"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/textContact"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail1"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/textTheaterTitle"
+        android:layout_width="280dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        style="@style/ContactTHRectangle"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="15dp"
+        android:text="Theater’s Contact Information"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textContact"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/textContact"
+        app:layout_constraintTop_toBottomOf="@+id/textPhone1" />
+
+    <TextView
+        android:id="@+id/textPhone2"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        style="@style/ContactRectangle"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="5dp"
+        android:text="Phone Number \n+30 211 7801 000"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textContact"
+        app:layout_constraintEnd_toEndOf="@+id/textContact"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/textContact"
+        app:layout_constraintTop_toBottomOf="@+id/textTheaterTitle"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/textAddress"
+        android:layout_width="232dp"
+        android:layout_height="63dp"
+        style="@style/ContactRectangle"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="5dp"
+        android:text="Address \nVas.Sofias 85, Athens 115 21"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textContact"
+        app:layout_constraintEnd_toEndOf="@+id/textContact"
+        app:layout_constraintStart_toStartOf="@+id/textContact"
+        app:layout_constraintTop_toBottomOf="@+id/textPhone2"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <TextView
+        android:id="@+id/textWorkingHours"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
+        style="@style/ContactRectangle"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="5dp"
+        android:text="Working Hours \nMonday – Friday   10:00 – 18:00 "
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textContact"
+        app:layout_constraintEnd_toEndOf="@+id/textContact"
+        app:layout_constraintStart_toStartOf="@+id/textContact"
+        app:layout_constraintTop_toBottomOf="@+id/textPhone2"
+        app:layout_constraintVertical_bias="0.753" />
+
+        <ImageButton
+            android:id="@+id/imageAc"
+            android:layout_width="69dp"
+            android:layout_height="76dp"
+            android:layout_marginBottom="96dp"
+            android:background="@drawable/accessibility_circle"
+            android:backgroundTint="@color/white"
+            android:contentDescription="Leads to Accessibility Menu"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.915"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textWorkingHours"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/icon_acc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

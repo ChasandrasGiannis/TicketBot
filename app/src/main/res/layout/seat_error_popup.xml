@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/seat_error_popup"
+    >
+
+    <LinearLayout
+        style="@style/ErrorBackground"
+        android:layout_width="391dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textError"
+                android:layout_width="334dp"
+                android:layout_height="170dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="30dp"
+                android:text="In order to proceed you must choose at least one ticket.\n\nIf you wish to go back to the chat press the Cancel button on the previous page."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonOK"
+                style="@style/CancelButton"
+                android:layout_width="83dp"
+                android:layout_height="49dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins"
+                android:text="OK"
+                android:textStyle="bold">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

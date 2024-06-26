@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ticket Bot</string>
+    <string-array name="play_array">
+        <item>Romeo and Juliet</item>
+        <item>Hamlet</item>
+    </string-array>
+    <string-array name="ticket_count_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

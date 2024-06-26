@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ScreenBackground">
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="271dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="136dp"
+        style="@style/HelpMButton"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Contact Us!" />
+
+    <TextView
+        android:id="@+id/buttonDisc"
+        android:layout_width="271dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        style="@style/HelpMButton"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="30dp"
+        android:text="Discover more about \n\t\t\t\tthe theater"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:paddingTop="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/buttonAcc"
+        android:layout_width="271dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        style="@style/HelpMButton"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="30dp"
+        android:text="Accessibility Menu"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDisc" />
+
+    <TextView
+        android:id="@+id/buttonWalkthrough"
+        android:layout_width="271dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        style="@style/HelpMButton"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="30dp"
+        android:text="Walkthrouhgs"
+        android:textAlignment="viewStart"
+        android:paddingTop="20dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAcc" />
+
+    <TextView
+        android:id="@+id/buttonRating"
+        android:layout_width="271dp"
+        android:layout_height="70dp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="44dp"
+        style="@style/HelpMButton"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="30dp"
+        android:text="Give us a rating!"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWalkthrough" />
+
+    <TextView
+        android:id="@+id/buttonTerms"
+        android:layout_width="271dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        style="@style/HelpMButton"
+        android:paddingTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="30dp"
+        android:text="Terms &amp; Conditions"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRating" />
+
+    <TextView
+        android:id="@+id/textHelp"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        style="@style/Title"
+        android:fontFamily="@font/poppins"
+        android:text="Help"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.541"
+        app:srcCompat="@drawable/assistant"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDisc"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDisc"
+        app:layout_constraintHorizontal_bias="0.963"
+        app:layout_constraintStart_toStartOf="@+id/buttonDisc"
+        app:layout_constraintTop_toTopOf="@+id/buttonDisc"
+        app:srcCompat="@drawable/theater_masks" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="49dp"
+        android:layout_height="52dp"
+        android:background="@drawable/circle_stroke"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAcc"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAcc"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="@+id/buttonAcc"
+        app:layout_constraintTop_toTopOf="@+id/buttonAcc"
+        app:srcCompat="@drawable/accessibility" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonWalkthrough"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWalkthrough"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="@+id/buttonWalkthrough"
+        app:layout_constraintTop_toTopOf="@+id/buttonWalkthrough"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/route" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="85dp"
+        android:layout_height="79dp"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonRating"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRating"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="@+id/buttonRating"
+        app:layout_constraintTop_toTopOf="@+id/buttonRating"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rating" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="71dp"
+        android:layout_height="76dp"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonTerms"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTerms"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="@+id/buttonTerms"
+        app:layout_constraintTop_toTopOf="@+id/buttonTerms"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/terms" />
+
+    <ImageButton
+        android:id="@+id/leftHelpArrow"
+        android:layout_width="75dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:background="@null"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Left Arrow leads to previous page"
+        app:layout_constraintEnd_toStartOf="@+id/textHelp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTerms"
+        app:layout_constraintVertical_bias="1.0">
+
+        <include
+            layout="@layout/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

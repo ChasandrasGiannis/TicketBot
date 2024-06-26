@@ -1,0 +1,31 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@android:color/white" /> <!-- White background -->
+                    <stroke android:width="2dp" android:color="#000000" /> <!-- Black outline -->
+                </shape>
+            </item>
+            <item
+                android:drawable="@drawable/ic_accessibility_button"
+                android:gravity="center" />
+        </layer-list>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@android:color/white" /> <!-- White background -->
+                    <stroke android:width="2dp" android:color="#808080" /> <!-- Gray outline -->
+                </shape>
+            </item>
+            <item
+                android:drawable="@drawable/ic_accessibility_button"
+                android:gravity="center" />
+        </layer-list>
+    </item>
+</selector>

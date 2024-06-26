@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_rating"
+        style="@style/ScreenBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parentlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/titleRating"
+                style="@style/Title"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="10dp"
+                android:text="Rate Us!"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/leftRateArrow"
+                android:layout_width="75dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="36dp"
+                android:background="@null"
+                android:contentDescription="Left Arrow leads to previous page"
+                android:elevation="8dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/titleRating"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/startingText"
+                style="@style/PlainText"
+                android:layout_width="281dp"
+                android:layout_height="146dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="5dp"
+                android:text="We would love to hear about your experience on our app and strive to make it even better! \n\nTap the star that describes your experience:"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleRating" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/WindowBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:progressTint="#EBC917"
+                android:rating="2.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/startingText" />
+
+            <Button
+                android:id="@+id/submitStars"
+                style="@style/HelpMButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+            <EditText
+                android:id="@+id/editFeedback"
+                android:layout_width="275dp"
+                android:layout_height="119dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/transparent_rectangle"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Click this box to share any complaints or suggestions you would like us to consider."
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/submitStars" />
+
+            <Button
+                android:id="@+id/submitFeedback"
+                style="@style/HelpMButton"
+                android:layout_width="141dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="Send Feedback"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editFeedback" />
+
+            <TextView
+                android:id="@+id/lastText"
+                style="@style/PlainText"
+                android:layout_width="273dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="5dp"
+                android:text="Or press on the microphone to share your feedback:"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/submitFeedback" />
+
+            <ImageButton
+                android:id="@+id/microphone"
+                style="@style/MicButton"
+                android:layout_width="71dp"
+                android:layout_height="68dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lastText"
+                app:srcCompat="@drawable/microphone" />
+
+            <TextView
+                android:id="@+id/thanksText"
+                style="@style/PlainText"
+                android:layout_width="244dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
+                android:paddingTop="5dp"
+                android:text="Thank you for your time!"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/microphone" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                style="@style/RightSparkles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                style="@style/LeftSparkles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

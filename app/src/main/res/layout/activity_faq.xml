@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ScreenBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            style="@style/WindowBackground"
+            android:layout_width="247dp"
+            android:layout_height="595dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/titleFaq"
+            style="@style/TextColour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="Frequently \nAsked Questions"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/titleFaq"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:srcCompat="@drawable/bubble_faq" />
+
+        <ImageButton
+            android:id="@+id/leftFaqArrow"
+            android:layout_width="75dp"
+            android:layout_height="61dp"
+            android:background="@null"
+            android:contentDescription="Left Arrow leads to previous page"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accessibility_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/accessibility_circle"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textDisc"
+            style="@style/ButtonColour"
+            android:layout_width="228dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins"
+            android:padding="10dp"
+            android:text="Do you offer special discounts on tickets?"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/titleFaq" />
+
+        <ImageButton
+            android:id="@+id/buttonDisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/textDisc"
+            app:layout_constraintEnd_toEndOf="@+id/textDisc"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="@+id/textDisc"
+            app:layout_constraintTop_toTopOf="@+id/textDisc"
+            app:layout_constraintVertical_bias="0.915"
+            app:srcCompat="@drawable/faq_arrow" />
+
+        <TextView
+            android:id="@+id/textLoc"
+            style="@style/ButtonColour"
+            android:layout_width="228dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:padding="10dp"
+            android:text="Where is the theater located?"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/textDisc">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/buttonLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/textLoc"
+            app:layout_constraintEnd_toEndOf="@+id/textLoc"
+            app:layout_constraintHorizontal_bias="0.931"
+            app:layout_constraintStart_toStartOf="@+id/textLoc"
+            app:layout_constraintTop_toTopOf="@+id/textLoc"
+            app:layout_constraintVertical_bias="0.837"
+            app:srcCompat="@drawable/faq_arrow" />
+
+        <TextView
+            android:id="@+id/textChange"
+            style="@style/ButtonColour"
+            android:layout_width="228dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:padding="10dp"
+            android:text="How can I change my ticket ?"
+            android:textAlignment="textStart"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/textLoc">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/buttonChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/textChange"
+            app:layout_constraintEnd_toEndOf="@+id/textChange"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toStartOf="@+id/textChange"
+            app:layout_constraintTop_toTopOf="@+id/textChange"
+            app:layout_constraintVertical_bias="0.864"
+            app:srcCompat="@drawable/faq_arrow" />
+
+        <TextView
+            android:id="@+id/textCancel"
+            style="@style/ButtonColour"
+            android:layout_width="228dp"
+            android:layout_height="70dp"
+            android:fontFamily="@font/poppins"
+            android:padding="10dp"
+            android:text="How can I cancel my ticket ?"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toTopOf="@+id/accessibility_button"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/textChange"
+            app:layout_constraintVertical_bias="0.3">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/textCancel"
+            app:layout_constraintEnd_toEndOf="@+id/textCancel"
+            app:layout_constraintHorizontal_bias="0.914"
+            app:layout_constraintStart_toStartOf="@+id/textCancel"
+            app:layout_constraintTop_toTopOf="@+id/textCancel"
+            app:layout_constraintVertical_bias="0.823"
+            app:srcCompat="@drawable/faq_arrow" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

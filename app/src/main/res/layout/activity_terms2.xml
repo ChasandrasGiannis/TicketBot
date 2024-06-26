@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/ScreenBackground">
+
+    <TextView
+        android:id="@+id/titleTermsCon2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        style="@style/Title"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="10dp"
+        android:text="Terms &amp; Conditions"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textTermsB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <ImageButton
+        android:id="@+id/leftTerms2Arrow"
+        android:layout_width="75dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="44dp"
+        android:background="@null"
+        android:contentDescription="Top Left Arrow leads to help menu"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <TextView
+        android:id="@+id/textTermsB"
+        android:layout_width="320dp"
+        android:layout_height="587dp"
+        android:layout_marginBottom="152dp"
+        style="@style/TransparentRectangle"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="12dp"
+        android:paddingTop="30dp"
+        android:paddingRight="10dp"
+        android:text="\t3.2 You agree to provide accurate and up-to-date information when inserting your personal data.
+        \n4. Intellectual Property
+  \n\t4.1. All content included in our app, including text, graphics, logos, and images, is the property of Ticket Apprentice or its licensors and is protected by copyright laws.
+  \n\t4.2. You may not reproduce, distribute, modify, or transmit any content from our app without prior written consent.
+        \n5. Changes to Terms
+  \n\t5.1. We reserve the right to modify these terms and conditions at any time without prior notice.
+  \n\t5.2. Your continued use of our app following any changes to these terms constitutes acceptance of those changes."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/secondpagec"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+
+        android:layout_marginEnd="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTermsB"
+        app:layout_constraintVertical_bias="0.779"
+        style="@style/CurrentPage" />
+
+    <ImageView
+        android:id="@+id/secondother"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/secondpagec"
+        app:layout_constraintTop_toBottomOf="@+id/textTermsB"
+        app:layout_constraintVertical_bias="0.779"
+        style="@style/AnyOtherPage"/>
+
+    <ImageButton
+        android:id="@+id/previousTerms2Arrow"
+        android:layout_width="75dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:background="@null"
+        android:contentDescription="Bottom Left Arrow leads to previous terms and conditions page"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/secondother"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <ImageView
+        android:id="@+id/imageSeal"
+        android:layout_width="76dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toEndOf="@+id/secondpagec"
+        app:srcCompat="@drawable/seal" />
+
+    <ImageButton
+        android:id="@+id/imageAc"
+        android:layout_width="62dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/accessibility_circle"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Leads to Accessibility Menu"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_acc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

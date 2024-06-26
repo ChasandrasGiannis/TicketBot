@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/ScreenBackground">
+
+    <TextView
+        android:id="@+id/titleTermsCon"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        style="@style/Title"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="10dp"
+        android:text="Terms &amp; Conditions"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/leftTermsArrow"
+        android:layout_width="75dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:background="@null"
+        android:contentDescription="Top Left Arrow leads to help menu"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/titleTermsCon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <TextView
+        android:id="@+id/textTermsA"
+        android:layout_width="319dp"
+        android:layout_height="663dp"
+        style="@style/TransparentRectangle"
+        android:fontFamily="@font/poppins"
+        android:paddingLeft="12dp"
+        android:paddingTop="30dp"
+        android:paddingRight="10dp"
+        android:text="These terms and conditions govern your use of our ticket purchase application and any related services provided through the app.
+ \n1. Acceptance of Terms
+\n \tBy accessing or using our app, you agree to be bound by these terms and conditions. If you do not agree with any part of these terms, you may not use our app.
+ \n2. Ticket Purchase
+  \n\t2.1. Our app allows you to purchase tickets for various theater performances.
+  \n\t2.2. By purchasing a ticket through our app, you agree to abide by the terms and conditions set forth by the event organizer.
+  \n\t2.3. All ticket sales are final and non-refundable, unless otherwise stated by the event organizer.
+\n3. Personal Information
+  \n\t3.1. In order to purchase tickets through our app, you will need to
+disclose your personal information to us."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTermsCon"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <ImageButton
+        android:id="@+id/RightTermsArrow"
+        android:layout_width="75dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        android:contentDescription="Right Arrow leads to second terms and conditions page"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/right_arrow" />
+
+    <ImageView
+        android:id="@+id/firstpagec"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTermsA"
+        app:layout_constraintVertical_bias="1.0"
+        style="@style/CurrentPage" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/RightTermsArrow"
+        app:layout_constraintTop_toBottomOf="@+id/textTermsA"
+        app:layout_constraintVertical_bias="1.0"
+        style="@style/AnyOtherPage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
